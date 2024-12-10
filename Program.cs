@@ -8,7 +8,7 @@
 //    color: "gray",
 //    sex: true);
 
-Cat cat01 = new("Kitty", "1962-03-02", false);
+//Cat cat01 = new("Kitty", "1962-03-02", false);
 Cat cat02 = new("Kitty", "1962-03-02", false, null, "white");
 
 Console.WriteLine(cat02);
