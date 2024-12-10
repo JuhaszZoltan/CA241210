@@ -13,7 +13,7 @@ internal class Cat
     public override string ToString()
     {
         string patColStr = Color is null || Pattern is null ?
-            "unknown" : $"{Pattern} {Color}";
+            "unknown color" : $"{Pattern} {Color}";
 
         return $"{Name} is a {patColStr} {Species} cat, {(Sex ? "he" : "she")} " +
             $"is {DateTime.Now.Year - BirthDate.Year} years old.";
