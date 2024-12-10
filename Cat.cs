@@ -8,4 +8,14 @@ internal class Cat
     public DateTime BirthDate { get; set; }
     public string? Pattern { get; set; }
     public string? Color { get; set; }
+
+    public Cat(Guid guid, string species, string name, DateTime birthDate, string? pattern, string? color)
+    {
+        Guid = guid;
+        Species = species ?? throw new ArgumentNullException(nameof(species));
+        Name = name ?? throw new ArgumentNullException(nameof(name));
+        BirthDate = birthDate;
+        Pattern = pattern;
+        Color = color;
+    }
 }
