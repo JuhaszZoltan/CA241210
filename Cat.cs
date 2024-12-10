@@ -11,7 +11,7 @@ internal class Cat
     public bool Sex { get; set; }
 
     public override string ToString() => 
-        $"{Name} is a {Color} {Species} cat, {(Sex? "he" : "she")} " +
+        $"{Name} is a {Color} {Species} cat, {(Sex ? "he" : "she")} " +
         $"is { DateTime.Now.Year - BirthDate.Year} years old.";
 
     public Cat(string species, string name, string birthDate, string? pattern, string? color, bool sex)
